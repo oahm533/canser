@@ -14,7 +14,7 @@ import os
 if not (os.path.exists('scaler.joblib') and os.path.exists('pca.joblib') and os.path.exists('model.joblib')):
     st.info("⏳ جاري تدريب النموذج لأول مرة...")
 
-    df = pd.read_csv(r'C:\Users\omar\Desktop\reg_cancer\data\cancer.csv')  # غيّر المسار إذا لزم
+    df = pd.read_csv('cancer.csv')  # غيّر المسار إذا لزم
 
     X = df.drop(columns=['target'])
     y = df['target']
@@ -80,8 +80,8 @@ features = list(scaler.feature_names_in_)
 
 # --- واجهة Streamlit ---
 st.title("🔬 Breast Cancer Prediction (All-in-One)")
-st.sidebar.image(r"C:\Users\omar\Desktop\reg_cancer\imge/cancer3.jpg")
-st.image(r"C:\Users\omar\Desktop\reg_cancer\imge/cancer2.jpg")            
+st.sidebar.image("cancer3.jpg")
+st.image("cancer2.jpg")            
 
 with open("test_score.txt", "r") as f:
     test_score = float(f.read())
