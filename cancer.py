@@ -86,9 +86,7 @@ with open("test_score.txt", "r") as f:
     test_score = float(f.read())
 st.write(f"📊 دقة النموذج على بيانات الاختبار: **{test_score * 100:.2f}%**")
 st.markdown("Overview")
-st.write("The Breast Cancer Detection Portal empowers early diagnosis through intelligent data analysis. Leveraging Support Vector Machines (SVM), Principal Component Analysis (PCA), and outlier detection techniques, our platform predicts breast cancer probability with high precision. This user-friendly web application is designed to support healthcare professionals and researchers in making faster, data-driven diagnostic decisions.
-
-")
+st.write("The Breast Cancer Detection Portal empowers early diagnosis through intelligent data analysis. Leveraging Support Vector Machines (SVM), Principal Component Analysis (PCA), and outlier detection techniques, our platform predicts breast cancer probability with high precision. This user-friendly web application is designed to support healthcare professionals and researchers in making faster, data-driven diagnostic decisions.")
 
 st.markdown("### أدخل القيم لتوقع احتمالية الإصابة:")
 
