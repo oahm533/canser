@@ -9,6 +9,14 @@ from sklearn.neighbors import LocalOutlierFactor
 from sklearn.metrics import accuracy_score
 import joblib
 import os
+st.markdown("""
+    <style>
+        [data-testid="stSidebar"] {
+            background-color: #fde0e0;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 
 # --- تدريب النموذج إذا لم يكن محفوظاً مسبقًا ---
 if not (os.path.exists('scaler.joblib') and os.path.exists('pca.joblib') and os.path.exists('model.joblib')):
